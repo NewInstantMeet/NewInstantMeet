@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration Form</title>
+    <link rel="stylesheet" href="assets/css/style_sign_log.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <button class="back-button" onclick="window.location.href='index_2.html'">
+        <i class="fas fa-arrow-left"></i> Voltar ao Início
+    </button>
+    <section id="loginButton">
+        <div class="container">
+            <div class="forms">
+                <div class="form login">
+                    <span class="title">Login</span>
+                    <form id="loginForm">
+                        <div class="input-field">
+                            <input type="text" id="loginEmail" placeholder="Seu email" required>
+                            <i class="fas fa-envelope icon"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="loginPassword" class="password" placeholder="Sua passe" required>
+                            <i class="fas fa-lock icon"></i>
+                            <i class="fas fa-eye-slash showHidePw"></i>
+                        </div>
+                        <div class="input-field button">
+                            <input type="submit" value="Login">
+                        </div>
+                    </form>
+                    <div class="login-signup">
+                        <span class="text">Não tem conta?
+                            <a href="#" class="text signup-link">Regista-te agora!</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="form signup">
+                    <span class="title">Sign-up</span>
+                    <form id="signupForm">
+                        <!-- Step 1: Nome e Sobrenome -->
+                        <div class="signup-step step-1 active-step">
+                            <div class="input-field">
+                                <input type="text" id="signupFirstName" placeholder="Seu Nome" required>
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="input-field">
+                                <input type="text" id="signupLastName" placeholder="Seu Sobrenome" required>
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="input-field button">
+                                <button type="button" class="next-btn">Seguinte</button>
+                            </div>
+                        </div>
+                        <!-- Step 2: Data de Nascimento e Sexo -->
+                        <div class="signup-step step-2">
+                            <div class="input-field">
+                                <input type="date" id="signupBirthdate" min="1920-01-01" required>
+                                <i class=""></i>
+                            </div>
+                            <div class="input-field">
+                                <select id="signupGender" required>
+                                    <option value="" disabled selected>Indique o seu sexo</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="feminino">Feminino</option>
+                                </select>
+                                <i class="fas fa-venus-mars"></i>
+                            </div>
+                            <div class="input-field button">
+                                <button type="button" class="prev-btn">Anterior</button>
+                                <button type="button" class="next-btn">Seguinte</button>
+                            </div>
+                        </div>
+                        <!-- Step 3: Email e Senha -->
+                        <div class="signup-step step-3">
+                            <div class="input-field">
+                                <input type="text" id="signupEmail" placeholder="Seu email" required>
+                                <i class="fas fa-envelope icon"></i>
+                            </div>
+                            <div class="input-field">
+                                <input type="password" id="signupPassword" class="password" placeholder="Criar a passe" required>
+                                <i class="fas fa-lock icon"></i>
+                            </div>
+                            <div class="input-field">
+                                <input type="password" id="signupConfirmPassword" class="password" placeholder="Confirmar a passe" required>
+                                <i class="fas fa-lock icon"></i>
+                            </div>
+                            <div class="input-field button">
+                                <input type="submit" value="Signup">
+                                <button type="button" class="prev-btn">Anterior</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="login-signup">
+                        <span class="text">Já tem conta?
+                            <a href="#" class="text login-link">Entra já!</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/script_sign_log.js"></script> 
+</body>
+</html>

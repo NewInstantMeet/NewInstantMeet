@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style_user.css">
+    <title>User Profile</title>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card" id="profileCard">
+            <div class="profile-header">
+                <div class="profile-picture-container">
+                    <img id="profileImage" src="assets/img/default-avatar.png" alt="Profile Image">
+                    <input type="file" id="imageUpload" accept="image/*" class="file-upload">
+                </div>
+                <h1 class="user-name" id="userName">Bem-vindo, <span></span></h1>
+            </div>
+            <div class="profile-details">
+                <form id="profileForm">
+                    <div class="form-section">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="birthdate">Data de Nascimento:</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                        
+                        <label for="gender">Sexo:</label>
+                        <select id="gender" name="gender">
+                            <option value="Masculino">Masculino</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-section">
+                        <label for="preferences">Insira os seus gostos:</label>
+                        <textarea id="preferences" name="preferences" placeholder="Exemplo: Gosto de música, Gosto de pizza" rows="4"></textarea>
+                    </div>
+
+                    <div class="form-section">
+                        <label for="bgColor">Cor de Fundo:</label>
+                        <input type="color" id="bgColor" name="bgColor">
+
+                        <label for="cardColor">Cor do Cartão:</label>
+                        <input type="color" id="cardColor" name="cardColor">
+
+                        <label for="bgImageUpload">Imagem de Fundo:</label>
+                        <input type="file" id="bgImageUpload" accept="image/*" class="file-upload">
+                    </div>
+
+                    <button type="submit">Salvar Alterações</button>
+                </form>
+                <button id="logoutButton">Logout</button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/user.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>New Instant Meet</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/img/Preview.png" rel="icon">
+  <link href="assets/img/Preview.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .rectangle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100px;
+      background-color: #f4f4f4;
+      border: 1px solid #ddd;
+      margin: 10px 0;
+      transition: background-color 0.3s ease;
+    }
+
+    .rectangle:hover {
+      background-color: #e0e0e0;
+    }
+
+    .rectangle a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      font-size: 2rem; 
+      color: #000;
+      text-decoration: none;
+    }
+
+    .rectangle a:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div id="logo">
+        <a href="index_2.html"><img src="assets/img/" alt=""></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Início</a></li>
+          <li><a class="nav-link scrollto" href="#about">Sobre</a></li>
+          <li><a class="nav-link scrollto" href="#services">Aplicação</a></li>
+          <li><a class="nav-link scrollto" href="#team">Comunidade</a></li>
+          <li class="dropdown"><a href="#"><span>Junta-te a nós</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a id="signupForm" href="index_3.html" class="text signup-link">Login/Sign-up</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#contact">Contactos</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Bem-Vindo ao NewInstantMeet</h1>
+      <h2>Conhecer pessoas novas é tão fácil!</h2>
+      <a href="#about" class="btn-get-started">Vamos Começar</a>
+    </div>
+  </section>
+
+  <main id="main">
+
+
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h4 class="title">Quem Somos</h4>
+            <p>
+              Sou aluno da Escola Mouzinho da Silveira, estou a fazer um projeto para facilitar a vida das pessoas que têm dificuldade de comunicar com as pessoas novas.
+            </p>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bi bi-briefcase"></i></div>
+              <h4 class="title">Em que consiste o Projeto</h4>
+              <h3 class="description"> A ideia é fazer com que as pessoas se unam e encontrem interesses comuns, facilitando novas amizades e interações. Mas como é que o projeto é implementado? O que o utilizador tem de fazer na aplicação é inserir os seus dados (nome, idade, etc.) e os seus gostos (tipo de música, jogos, livros, etc.) - tudo o que gosta.
+                A partir dessa informação, a aplicação vai encontrar pessoas perto de si, num raio máximo de aproximadamente 150 metros. A aplicação compara os dados de duas ou mais pessoas e, se encontrar correspondências, os utilizadores recebem uma notificação de que há pessoas com os mesmos gostos nas proximidades.
+                Os utilizadores podem então decidir se querem iniciar um chat e combinar um encontro, ou até fazer um telefonema (só se ambas as partes concordarem). Se não quiserem, um dos dois ou mais pode rejeitar e a interação termina ali.
+                Desta forma, espero facilitar a socialização, ajudando as pessoas a encontrar companhia baseada em interesses comuns e a superar a timidez ou a resistência a sair da sua zona de conforto.</h3>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bi bi-card-checklist"></i></div>
+              <h4 class="title">Como surgiu a ideia</h4>
+              <h3 class="description">A ideia surgiu a partir da minha observação dos alunos na escola, muitos dos quais são antisociais. Alguns não querem sair da sua zona de conforto, enquanto outros têm dificuldades em iniciar uma conversa. Há muitos fatores que contribuem para isso. Por isso, quero criar uma aplicação que ajude as pessoas a se unirem e a encontrarem interesses comuns, facilitando novas amizades e interações.</h3>
+            </div>
+
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bi bi-binoculars"></i></div>
+              <h4 class="title">Objetivos e curiosidades do Projeto</h4>
+              <h3 class="description">Atráves dos seus gostos inseridos, a aplicação vai procurar pessoas perto de si, num raio máximo de aproximadamente 100 metros. A aplicação compara os dados de duas ou mais pessoas e, se encontrar correspondências, os utilizadores recebem uma notificação de que há pessoas com os mesmos gostos nas proximidades.
+                Os utilizadores podem então decidir se querem iniciar um chat e combinar um encontro, ou até fazer um telefonema (só se ambas as partes concordarem). Se não quiserem, um dos dois ou mais pode rejeitar e a interação termina ali.
+                Desta forma, espero facilitar a socialização, ajudando as pessoas a encontrar companhia baseada em interesses comuns e a superar a timidez ou a resistência a sair da sua zona de conforto.</h3>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 background order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100"></div>
+        </div>
+
+      </div>
+    </section> 
+
+ 
+    <section id="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Aplicação</h3>
+          <p class="section-description"></p>
+          <p>
+          </p>
+        </div>
+      </div>
+    </section>
+
+ 
+    <section id="call-to-action">
+      <div class="container">
+        <div class="row" data-aos="zoom-in">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3 class="cta-title">Instala a nossa App!</h3>
+            <p class="cta-text">Aqui começam novas emoções</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="app.html">Instalar Agora</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+ 
+    <section id="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Comunidade</h3>
+          <p>
+            Henry Ford- Unir-se é um bom começo, manter a união é um progresso, e trabalhar em conjunto é a vitória.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="rectangle">
+              <a href="https://www.instagram.com/newinstantmeet/" class="bi bi-instagram"></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="rectangle">
+              <a href="https://www.facebook.com/newinstantmeet/" class="bi bi-facebook"></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="rectangle">
+              <a href="https://www.twitter.com/newinstantmeet/" class="bi bi-twitter"></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="rectangle">
+              <a href="https://www.linkedin.com/company/newinstantmeet/" class="bi bi-linkedin"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Contactos</h3>
+          <p class="section-description"></p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info">
+              <div>
+                <i class="bi bi-geo-alt"></i>
+                <p>Av. do Bonfim<br>Portalegre, 7300-067</p>
+              </div>
+
+              <div>
+                <i class="bi bi-envelope"></i>
+                <p>affinitywatch3@gmail.com</p>
+              </div>
+
+              <div>
+                <i class="bi bi-phone"></i>
+                <p>+351 --- --- ---</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="info">
+              <div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>NewInstantMeet</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
